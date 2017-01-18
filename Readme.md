@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Максим Акимов](https://up.htmlacademy.ru/htmlcss/16/user/352625).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Кованов](https://htmlacademy.ru/profile/arhont).
 
 ---
 
