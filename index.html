@@ -2,11 +2,181 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
+    <title>Нёрдс - Главная страница</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
+    <!--<p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>-->
+    <header class="main-header">
+      <div class="container">
+        <a href="#">
+          <img src="#" alt="Логотип">
+        </a>
+        <nav class="main-navigation">
+          <ul>
+            <li>
+              <a href="#">Студия</a>
+            </li>
+            <li>
+              <a href="#">Клиенты</a>
+            </li>
+            <li>
+              <a href="#">Магазин</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="basket-block">
+          <a class="basket" href="#">Корзина</a>
+        </div>
+      </div>
+    </header>
+    <main class="container">
+      <!--Блок слайдера, взял код из соответствующего курса:-->
+      <div class="slider">
+        <div class="slider-inner">
+          <div class="slider-slides">
+            <div class="slide">
+              <!--Думаю расположить кнопку и текст поверх картинки слайда:-->
+              <!--Текст и краткая информация первого слайда:-->
+              <span class="slogan">Долго, дорого, скрупулезно.</span>
+              <span class="slogan-info">
+                Математически выверенный дизайн
+                для Вашего сайта или мобильного приложения
+              </span>
+              <img src="#" alt="Рисунок слайдера 1">
+              <!--Кнопку сделал обыкновенной ссылкой:-->
+              <a href="#">Узнать больше</a>
+            </div>
+            <div class="slide">
+              <!--Текст и краткая информация второго слайда:-->
+              <span class="slogan">Слоган-2</span>
+              <span class="slogan-info">
+                Подпись к слогану-2
+              </span>
+              <img src="#" alt="Рисунок слайдера 2">
+              <!--Кнопку сделал обыкновенной ссылкой:-->
+              <a href="#">Узнать больше</a>
+            </div>
+            <div class="slide">
+              <!--Текст и краткая информация третьего слайда:-->
+              <span class="slogan">Слоган-3</span>
+              <span class="slogan-info">
+                Подпись к слогану-3
+              </span>
+              <img src="#" alt="Рисунок слайдера 3">
+              <!--Кнопку сделал обыкновенной ссылкой:-->
+              <a href="#">Узнать больше</a>
+            </div>
+          </div>
+          <input type="radio" id="btn-1" name="toggle" checked>
+          <input type="radio" id="btn-2" name="toggle">
+          <input type="radio" id="btn-3" name="toggle">
+          <div class="slider-controls">
+            <label for="btn-1"></label>
+            <label for="btn-2"></label>
+            <label for="btn-3"></label>
+          </div>
+        </div>
+      </div>
+      <!--Блок основных направлений бизнеса компании:-->
+      <div class="business-type">
+        <div class="web">
+          <img src="#" alt="Рисунок «Веб-сайты»">
+          <h2>Веб-сайты</h2>
+          <span>
+            Мир никогда не будет прежним
+            после того как увидит Ваш сайт!
+          </span>
+          <a href="#">Заказать</a>
+        </div>
+        <div class="app">
+          <img src="#" alt="Рисунок «Приложения»">
+          <h2>Приложения</h2>
+          <span>
+            Покорите топ-10 приложений в
+            AppStore и Google Play
+          </span>
+          <a href="#">Заказать</a>
+        </div>
+        <div class="presentation">
+          <img src="#" alt="Рисунок «Презентации»">
+          <h2>Презентации</h2>
+          <span>
+            Вы даже не подозреваете,
+            насколько вы изумительны!
+          </span>
+          <a href="#">Заказать</a>
+        </div>
+      </div>
+      <!--Блок краткой информации о компании:-->
+      <div class="info">
+        <div class="info-block">
+          <p>
+            <b>
+              Мы маленькая, но гордая
+              дизайн-студия из Краснодара.
+            </b>
+          </p>
+          <p>
+            Исповедуем принципы минимализма и чистоты. Ставим математический расчет
+            превыше креатива. Работаем не покладая рук, как роботы.
+          </p>
+          <span>Выполняем заказы на разработку:</span>
+          <ul>
+            <li>Веб-сайтов любой сложности</li>
+            <li>Мобильных приложений для iOS и Android</li>
+            <li>Слайдшоу и видео для корпоративных презентаций</li>
+          </ul>
+        </div>
+        <div class="info-block-2">
+          <!--Не думаю что эту картинку нужно делать ссылкой:-->
+          <img src="#" alt="Логотип 2">
+          <span>С 2004 года любим точность во всем:</span>
+          <table>
+            <tr>
+              <th>146%</th>
+              <th>100%</th>
+              <th>50%</th>
+            </tr>
+            <tr>
+              <td>Уровень самоотдачи</td>
+              <td>Cоблюдение сроков</td>
+              <td>Минимальная предоплата</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <ul class="partners">
+        <li><a><img src="#" alt="Лого «htmlacademy.ru»"></a></li>
+        <li><a><img src="#" alt="Лого «Барбершоп Borodinski»"></a></li>
+        <li><a><img src="#" alt="Лого «Pink»"></a></li>
+        <li><a><img src="#" alt="Лого «Mishka»"></a></li>
+      </ul>
+      <div class="map">
+        <section class="contacts">
+          <span>
+            NЁRDS DESIGN STUDIO
+          </span>
+          191186, Санкт-Петербург,
+          ул. Б. Конюшенная, д. 19/8
+          тел. +7 (812) 275-75-75
+          <a href="#">Напишите нам</a>
+        </section>
+        <!--Если останется время, хотелось бы реализовать
+        масштабируемой картой:-->
+        <img src="#" alt="Местоположение на карте">
+      </div>
+    </main>
+    <footer class="main-footer">
+      <section class="footer-social">
+        <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+        <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+        <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+        <span>Давайте дружить, это выгодно!</span>
+        <span>Скидка 10% для друзей из социальных сетей.</span>
+      </section>
+    </footer>
   </body>
 </html>

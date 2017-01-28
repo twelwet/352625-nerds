@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Нёрдс - Каталог</title>
+  </head>
+  <body>
+    <!--<p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>-->
+    <header class="main-header">
+      <div class="container">
+        <a href="#">
+          <img src="#" alt="Логотип">
+        </a>
+        <nav class="main-navigation">
+          <ul>
+            <li>
+              <a href="#">Студия</a>
+            </li>
+            <li>
+              <a href="#">Клиенты</a>
+            </li>
+            <li>
+              <!--Ссылку сделал неактивной:-->
+              <a>Магазин</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="basket-block">
+          <a class="basket" href="#">Корзина</a>
+        </div>
+        <h1>Магазин готовых шаблонов</h1>
+      </div>
+    </header>
+    <main class="container">
+      <div class="filter">
+        <form action="#" method="get">
+          <span>Стоимость:</span>
+          <!--Фильтр по стоимости:-->
+          <div class="filter-price">
+            <img src="#" alt="Фильтр цен.gif">
+            <label>
+              От <input type="text" name="start-price">
+            </label>
+            <label>
+              До <input type="text" name="start-price">
+            </label>
+          </div>
+          <span>Сетка:</span>
+          <!--Фильтр по типу сеток шаблонов:-->
+          <ul class="filter-grid-type">
+            <li>
+              <label>
+                <input type="radio" name="grid-type" value="adaptive-grid">
+                Адаптивная
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="radio" name="grid-type" value="fixed-grid">
+                Фиксированная
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="radio" name="grid-type" value="rubber-grid">
+                Резиновая
+              </label>
+            </li>
+          </ul>
+          <span>Особенности:</span>
+          <!--Фильтр по набору особенностей шаблонов:-->
+          <ul>
+            <li>
+              <label>
+                <input type="checkbox" value="slider">
+                Слайдер
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" value="benefits-block">
+                Блок преимуществ
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" value="news">
+                Новости
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" value="gallery">
+                Галерея
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" value="basket">
+                Корзина
+              </label>
+            </li>
+          </ul>
+          <!--Кнопка фильтрации:-->
+          <button type="submit">Показать</button>
+        </form>
+      </div>
+      <!--Блок карточек готовых шаблонов сайтов:-->
+      <div class="cards-block">
+        <!--Первая карточка шаблона:-->
+        <div class="templ-card">
+          <a href="#">
+            <img src="#" alt="Sedona">
+          </a>
+          <!--Если наводим курсор мыши на карточку шаблона,
+          то видим описание шаблона и кнопку с ценой:-->
+          <div class="templ-add">
+            <h2 class="templ-name">
+              Sedona
+            </h2>
+            <span class="templ-brief">
+              Информационный сайт для туристов
+            </span>
+            <a class="buy" href="#">9900 руб.</a>
+          </div>
+        </div>
+        <!--Вторая карточка шаблона:-->
+        <div class="templ-card">
+          <a href="#">
+            <img src="#" alt="Pink">
+          </a>
+          <!--Если наводим курсор мыши на карточку шаблона,
+          то видим описание шаблона и кнопку с ценой:-->
+          <div class="templ-add">
+            <h2 class="templ-name">
+              Pink
+            </h2>
+            <span class="templ-brief">
+              Краткая информация о шаблоне
+            </span>
+            <a class="buy" href="#">9900 руб.</a>
+          </div>
+        </div>
+        <!--Третья карточка шаблона:-->
+        <div class="templ-card">
+          <a href="#">
+            <img src="#" alt="Барбершоп Бородинский">
+          </a>
+          <!--Если наводим курсор мыши на карточку шаблона,
+          то видим описание шаблона и кнопку с ценой:-->
+          <div class="templ-add">
+            <h2 class="templ-name">
+              Барбершоп Бородинский
+            </h2>
+            <span class="templ-brief">
+              Краткая информация о шаблоне
+            </span>
+            <a class="buy" href="#">9900 руб.</a>
+          </div>
+        </div>
+        <!--Четвертая карточка шаблона:-->
+        <div class="templ-card">
+          <a href="#">
+            <img src="#" alt="Mishka">
+          </a>
+          <!--Если наводим курсор мыши на карточку шаблона,
+          то видим описание шаблона и кнопку с ценой:-->
+          <div class="templ-add">
+            <h2 class="templ-name">
+              Mishka
+            </h2>
+            <span class="templ-brief">
+              Краткая информация о шаблоне
+            </span>
+            <a class="buy" href="#">9900 руб.</a>
+          </div>
+        </div>
+        <!--Пятая карточка шаблона:-->
+        <div class="templ-card">
+          <a href="#">
+            <img src="#" alt="Учебный сайт">
+          </a>
+          <!--Если наводим курсор мыши на карточку шаблона,
+          то видим описание шаблона и кнопку с ценой:-->
+          <div class="templ-add">
+            <h2 class="templ-name">
+              Учебный сайт
+            </h2>
+            <span class="templ-brief">
+              Краткая информация о шаблоне
+            </span>
+            <a class="buy" href="#">9900 руб.</a>
+          </div>
+        </div>
+        <!--Шестая карточка шаблона:-->
+        <div class="templ-card">
+          <a href="#">
+            <img src="#" alt="Кваст">
+          </a>
+          <!--Если наводим курсор мыши на карточку шаблона,
+          то видим описание шаблона и кнопку с ценой:-->
+          <div class="templ-add">
+            <h2 class="templ-name">
+              Кваст
+            </h2>
+            <span class="templ-brief">
+              Краткая информация о шаблоне
+            </span>
+            <a class="buy" href="#">9900 руб.</a>
+          </div>
+        </div>
+        <!--Блок пагинации:-->
+        <div class="pagination">
+          <a>1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">Следующая</a>
+        </div>
+      </div>
+      <!--Блок местоположения и контактов:-->
+      <div class="map">
+        <section class="contacts">
+          <span>
+            NЁRDS DESIGN STUDIO
+          </span>
+          191186, Санкт-Петербург,
+          ул. Б. Конюшенная, д. 19/8
+          тел. +7 (812) 275-75-75
+          <a href="#">Напишите нам</a>
+        </section>
+        <img src="#" alt="Местоположение на карте">
+      </div>
+    </main>
+    <footer class="main-footer">
+      <section class="footer-social">
+        <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+        <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+        <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+        <span>Давайте дружить, это выгодно!</span>
+        <span>Скидка 10% для друзей из социальных сетей.</span>
+      </section>
+    </footer>
+  </body>
+</html>
