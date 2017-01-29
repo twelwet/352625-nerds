@@ -5,7 +5,6 @@
     <title>Нёрдс - Каталог</title>
   </head>
   <body>
-    <!--<p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>-->
     <header class="main-header">
       <div class="container">
         <a href="#">
@@ -20,8 +19,8 @@
               <a href="#">Клиенты</a>
             </li>
             <li>
-              <!--Ссылку сделал неактивной:-->
-              <a>Магазин</a>
+              <!--Добавил класс "current" для стилизации:-->
+              <a class="current">Магазин</a>
             </li>
             <li>
               <a href="#">Контакты</a>
@@ -38,9 +37,12 @@
       <div class="filter">
         <form action="#" method="get">
           <span>Стоимость:</span>
-          <!--Фильтр по стоимости:-->
-          <div class="filter-price">
-            <img src="#" alt="Фильтр цен.gif">
+          <!--Поменял название класса согласно твоим замечаниям:-->
+          <div class="price-filter">
+            <!--Добавил div для ползунков цен:-->
+            <div class="price-slider">
+              <!--Содержимое добавлю после скринкаста-->
+            </div>
             <label>
               От <input type="text" name="start-price">
             </label>
@@ -49,8 +51,8 @@
             </label>
           </div>
           <span>Сетка:</span>
-          <!--Фильтр по типу сеток шаблонов:-->
-          <ul class="filter-grid-type">
+          <!--Поменял название класса согласно твоим замечаниям:-->
+          <ul class="grid-type-filter">
             <li>
               <label>
                 <input type="radio" name="grid-type" value="adaptive-grid">
@@ -71,8 +73,8 @@
             </li>
           </ul>
           <span>Особенности:</span>
-          <!--Фильтр по набору особенностей шаблонов:-->
-          <ul>
+          <!--Добавил название класса для единообразия:-->
+          <ul class="features-filter">
             <li>
               <label>
                 <input type="checkbox" value="slider">
@@ -108,105 +110,112 @@
           <button type="submit">Показать</button>
         </form>
       </div>
+      <!--Добавил забытый блок сортировки, после блока фильтров,
+      но не внутри блока с карточками шаблонов:-->
+      <div class="sort-by">
+        <span>Сортировать:</span>
+        <!--Режимы сортировки организую в отдельный div:-->
+        <div class="kind-of-sort">
+          <!--Предлагаю класс "current" для стилизации
+          подсвеченных режимов сортировки:-->
+          <a class="current" href="#">По цене</a>
+          <a href="#">По типу</a>
+          <a href="#">По названию</a>
+          <!--Планирую сделать треугольники убывания и возрастания
+          просто картинками, а режимы сортировки - ссылками с отображением
+          карточек шаблонов сначала по убыванию, а потом по возрастанию.
+          Правда пока не знаю как это реализовать.-->
+          <img class="current" src="#" alt="По убыванию">
+          <img src="#" alt="По возрастанию">
+        </div>
+      </div>
       <!--Блок карточек готовых шаблонов сайтов:-->
       <div class="cards-block">
         <!--Первая карточка шаблона:-->
-        <div class="templ-card">
-          <a href="#">
-            <img src="#" alt="Sedona">
-          </a>
+        <div class="template-card">
+          <img src="#" alt="Sedona">
           <!--Если наводим курсор мыши на карточку шаблона,
           то видим описание шаблона и кнопку с ценой:-->
-          <div class="templ-add">
-            <h2 class="templ-name">
-              Sedona
+          <div class="animation-block">
+            <h2 class="template-name">
+              <a href="#">Sedona</a>
             </h2>
-            <span class="templ-brief">
+            <span class="template-brief">
               Информационный сайт для туристов
             </span>
             <a class="buy" href="#">9900 руб.</a>
           </div>
         </div>
         <!--Вторая карточка шаблона:-->
-        <div class="templ-card">
-          <a href="#">
-            <img src="#" alt="Pink">
-          </a>
+        <div class="template-card">
+          <img src="#" alt="Pink">
           <!--Если наводим курсор мыши на карточку шаблона,
           то видим описание шаблона и кнопку с ценой:-->
-          <div class="templ-add">
-            <h2 class="templ-name">
-              Pink
+          <div class="animation-block">
+            <h2 class="template-name">
+              <a href="#">Pink</a>
             </h2>
-            <span class="templ-brief">
+            <span class="template-brief">
               Краткая информация о шаблоне
             </span>
             <a class="buy" href="#">9900 руб.</a>
           </div>
         </div>
         <!--Третья карточка шаблона:-->
-        <div class="templ-card">
-          <a href="#">
-            <img src="#" alt="Барбершоп Бородинский">
-          </a>
+        <div class="template-card">
+          <img src="#" alt="Барбершоп Бородинский">
           <!--Если наводим курсор мыши на карточку шаблона,
           то видим описание шаблона и кнопку с ценой:-->
-          <div class="templ-add">
-            <h2 class="templ-name">
-              Барбершоп Бородинский
+          <div class="animation-block">
+            <h2 class="template-name">
+              <a href="#">Барбершоп Бородинский</a>
             </h2>
-            <span class="templ-brief">
+            <span class="template-brief">
               Краткая информация о шаблоне
             </span>
             <a class="buy" href="#">9900 руб.</a>
           </div>
         </div>
         <!--Четвертая карточка шаблона:-->
-        <div class="templ-card">
-          <a href="#">
-            <img src="#" alt="Mishka">
-          </a>
+        <div class="template-card">
+          <img src="#" alt="Mishka">
           <!--Если наводим курсор мыши на карточку шаблона,
           то видим описание шаблона и кнопку с ценой:-->
-          <div class="templ-add">
-            <h2 class="templ-name">
-              Mishka
+          <div class="animation-block">
+            <h2 class="template-name">
+              <a href="#">Mishka</a>
             </h2>
-            <span class="templ-brief">
+            <span class="template-brief">
               Краткая информация о шаблоне
             </span>
             <a class="buy" href="#">9900 руб.</a>
           </div>
         </div>
         <!--Пятая карточка шаблона:-->
-        <div class="templ-card">
-          <a href="#">
-            <img src="#" alt="Учебный сайт">
-          </a>
+        <div class="template-card">
+          <img src="#" alt="Учебный сайт">
           <!--Если наводим курсор мыши на карточку шаблона,
           то видим описание шаблона и кнопку с ценой:-->
-          <div class="templ-add">
-            <h2 class="templ-name">
-              Учебный сайт
+          <div class="animation-block">
+            <h2 class="template-name">
+              <a href="#">Учебный сайт</a>
             </h2>
-            <span class="templ-brief">
+            <span class="template-brief">
               Краткая информация о шаблоне
             </span>
             <a class="buy" href="#">9900 руб.</a>
           </div>
         </div>
         <!--Шестая карточка шаблона:-->
-        <div class="templ-card">
-          <a href="#">
-            <img src="#" alt="Кваст">
-          </a>
+        <div class="template-card">
+          <img src="#" alt="Кваст">
           <!--Если наводим курсор мыши на карточку шаблона,
           то видим описание шаблона и кнопку с ценой:-->
-          <div class="templ-add">
-            <h2 class="templ-name">
-              Кваст
+          <div class="animation-block">
+            <h2 class="template-name">
+              <a href="#">Кваст</a>
             </h2>
-            <span class="templ-brief">
+            <span class="template-brief">
               Краткая информация о шаблоне
             </span>
             <a class="buy" href="#">9900 руб.</a>
@@ -220,25 +229,27 @@
           <a href="#">Следующая</a>
         </div>
       </div>
-      <!--Блок местоположения и контактов:-->
+    </main>
+    <footer class="main-footer">
+      <!--Блок местоположения и контактов перенес в footer:-->
       <div class="map">
-        <section class="contacts">
+        <div class="contacts">
           <span>
             NЁRDS DESIGN STUDIO
           </span>
-          191186, Санкт-Петербург,
-          ул. Б. Конюшенная, д. 19/8
-          тел. +7 (812) 275-75-75
+          191186, Санкт-Петербург,<br>
+          ул. Б. Конюшенная, д. 19/8<br>
+          тел. +7 (812) 275-75-75<br>
           <a href="#">Напишите нам</a>
-        </section>
+        </div>
         <img src="#" alt="Местоположение на карте">
       </div>
-    </main>
-    <footer class="main-footer">
       <section class="footer-social">
         <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
         <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
         <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+      </section>
+      <section class="footer-info">
         <span>Давайте дружить, это выгодно!</span>
         <span>Скидка 10% для друзей из социальных сетей.</span>
       </section>
