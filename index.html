@@ -19,7 +19,6 @@
               <a href="#">Клиенты</a>
             </li>
             <li>
-              <!--Здесь класс "current" решил не добавлять:-->
               <a href="#">Магазин</a>
             </li>
             <li>
@@ -33,12 +32,10 @@
       </div>
     </header>
     <main class="container">
-      <!--Блок слайдера, взял код из соответствующего курса:-->
       <div class="slider">
         <div class="slider-inner">
           <div class="slider-slides">
             <div class="slide">
-              <!--Текст и краткая информация первого слайда:-->
               <div class="slide-title">Долго, дорого, скрупулезно.</div>
               <div class="slide-info">
                 Математически выверенный дизайн
@@ -48,7 +45,6 @@
               <a href="#">Узнать больше</a>
             </div>
             <div class="slide">
-              <!--Текст и краткая информация второго слайда:-->
               <div class="slide-title">Любим математику как никто другой</div>
               <div class="slide-info">
                 Никакого креатива, только математические формулы
@@ -58,7 +54,6 @@
               <a href="#">Узнать больше</a>
             </div>
             <div class="slide">
-              <!--Текст и краткая информация третьего слайда:-->
               <div class="slide-title">Только ночь, только хардкор</div>
               <div class="slide-info">
                 Работаете днем, как все? Мы против этого.
@@ -78,39 +73,35 @@
           </div>
         </div>
       </div>
-      <!--Блок основных направлений бизнеса компании:-->
-      <div class="business-type">
-        <!--Не уверен где точно прописать дополнительный класс
-        для стилизации цвета кнопок этих трех однотипных блоков:-->
-        <div>
+      <div class="business-types">
+        <div class="business-type">
           <img src="#" alt="Рисунок «Веб-сайты»">
-          <h2>Веб-сайты</h2>
-          <span>
+          <h2 class="business-header" >Веб-сайты</h2>
+          <div class="business-info">
             Мир никогда не будет прежним
             после того как увидит Ваш сайт!
-          </span>
-          <a href="#">Заказать</a>
+          </div>
+          <a class="btn red" href="#">Заказать</a>
         </div>
-        <div>
+        <div class="business-type">
           <img src="#" alt="Рисунок «Приложения»">
-          <h2>Приложения</h2>
-          <span>
+          <h2 class="business-header">Приложения</h2>
+          <div class="business-info">
             Покорите топ-10 приложений в
             AppStore и Google Play
-          </span>
-          <a href="#">Заказать</a>
+          </div>
+          <a class="btn green" href="#">Заказать</a>
         </div>
-        <div>
+        <div class="business-type">
           <img src="#" alt="Рисунок «Презентации»">
-          <h2>Презентации</h2>
-          <span>
+          <h2 class="business-header">Презентации</h2>
+          <div class="business-info">
             Вы даже не подозреваете,
             насколько вы изумительны!
-          </span>
-          <a href="#">Заказать</a>
+          </div>
+          <a class="btn yellow" href="#">Заказать</a>
         </div>
       </div>
-      <!--Блок краткой информации о компании:-->
       <div class="info">
         <div class="info-block">
           <p>
@@ -128,18 +119,18 @@
             <li>Слайдшоу и видео для корпоративных презентаций</li>
           </ul>
         </div>
-        <div class="percent-block">
+        <div class="percent-blocks">
           <img src="#" alt="Логотип 2">
           <span>С 2004 года любим точность во всем:</span>
-          <div class="commitment">
+          <div class="percent-block">
             <span class="percent">146%</span>
             <span class="info">Уровень самоотдачи</span>
           </div>
-          <div class="limitation">
+          <div class="percent-block">
             <span class="percent">100%</span>
             <span class="info">Cоблюдение сроков</span>
           </div>
-          <div class="prepayment">
+          <div class="percent-block">
             <span class="percent">50%</span>
             <span class="info">Минимальная предоплата</span>
           </div>
@@ -153,7 +144,6 @@
       </ul>
     </main>
     <footer class="main-footer">
-      <!--Блок местоположения и контактов перенес в footer:-->
       <div class="map">
         <div class="contacts">
           <span>

@@ -19,7 +19,6 @@
               <a href="#">Клиенты</a>
             </li>
             <li>
-              <!--Добавил класс "current" для стилизации:-->
               <a class="current">Магазин</a>
             </li>
             <li>
@@ -34,24 +33,20 @@
       </div>
     </header>
     <main class="container">
-      <div class="filter">
+      <div class="filtration">
         <form action="#" method="get">
           <span>Стоимость:</span>
-          <!--Поменял название класса согласно твоим замечаниям:-->
           <div class="price-filter">
-            <!--Добавил div для ползунков цен:-->
             <div class="price-slider">
-              <!--Содержимое добавлю после скринкаста-->
             </div>
             <label>
               От <input type="text" name="start-price">
             </label>
             <label>
-              До <input type="text" name="start-price">
+              До <input type="text" name="finish-price">
             </label>
           </div>
           <span>Сетка:</span>
-          <!--Поменял название класса согласно твоим замечаниям:-->
           <ul class="grid-type-filter">
             <li>
               <label>
@@ -73,7 +68,6 @@
             </li>
           </ul>
           <span>Особенности:</span>
-          <!--Добавил название класса для единообразия:-->
           <ul class="features-filter">
             <li>
               <label>
@@ -106,124 +100,93 @@
               </label>
             </li>
           </ul>
-          <!--Кнопка фильтрации:-->
           <button type="submit">Показать</button>
         </form>
       </div>
-      <!--Добавил забытый блок сортировки, после блока фильтров,
-      но не внутри блока с карточками шаблонов:-->
       <div class="sort-by">
         <span>Сортировать:</span>
-        <!--Режимы сортировки организую в отдельный div:-->
         <div class="kind-of-sort">
-          <!--Предлагаю класс "current" для стилизации
-          подсвеченных режимов сортировки:-->
+          <!--Хочу реализовать так: по первому клику - сортировка по убыванию,
+          а по второму - по возрастанию, что добавить в код?-->
           <a class="current" href="#">По цене</a>
           <a href="#">По типу</a>
           <a href="#">По названию</a>
-          <!--Планирую сделать треугольники убывания и возрастания
-          просто картинками, а режимы сортировки - ссылками с отображением
-          карточек шаблонов сначала по убыванию, а потом по возрастанию.
-          Правда пока не знаю как это реализовать.-->
-          <img class="current" src="#" alt="По убыванию">
-          <img src="#" alt="По возрастанию">
+          <!--Хочу реализовать не ссылками, а информационными картинками,
+          которые подсвечиваются в зависимости от кликов "По цене", "По типу,
+          ", "По названию", что добавить в код?-->
+          <a class="sort-direction">По убыванию</a>
+          <a class="sort-direction">По возрастанию</a>
         </div>
       </div>
-      <!--Блок карточек готовых шаблонов сайтов:-->
       <div class="cards-block">
-        <!--Первая карточка шаблона:-->
         <div class="template-card">
           <img src="#" alt="Sedona">
-          <!--Если наводим курсор мыши на карточку шаблона,
-          то видим описание шаблона и кнопку с ценой:-->
           <div class="animation-block">
-            <h2 class="template-name">
-              <a href="#">Sedona</a>
-            </h2>
+            <a href="#" class="template-name">Sedona</a>
             <span class="template-brief">
-              Информационный сайт для туристов
+              Информационный сайт
+              для туристов
             </span>
             <a class="buy" href="#">9900 руб.</a>
           </div>
         </div>
-        <!--Вторая карточка шаблона:-->
         <div class="template-card">
           <img src="#" alt="Pink">
-          <!--Если наводим курсор мыши на карточку шаблона,
-          то видим описание шаблона и кнопку с ценой:-->
           <div class="animation-block">
-            <h2 class="template-name">
-              <a href="#">Pink</a>
-            </h2>
+            <a href="#" class="template-name">Pink App</a>
             <span class="template-brief">
-              Краткая информация о шаблоне
+              Продуктовый лендинг
+              Приложения для iOS и Android
             </span>
             <a class="buy" href="#">9900 руб.</a>
           </div>
         </div>
-        <!--Третья карточка шаблона:-->
         <div class="template-card">
           <img src="#" alt="Барбершоп Бородинский">
-          <!--Если наводим курсор мыши на карточку шаблона,
-          то видим описание шаблона и кнопку с ценой:-->
           <div class="animation-block">
-            <h2 class="template-name">
-              <a href="#">Барбершоп Бородинский</a>
-            </h2>
+            <a href="#" class="template-name">Barbershop</a>
             <span class="template-brief">
-              Краткая информация о шаблоне
+              Сайт салона красоты.
+              Для мужчин, да.
             </span>
             <a class="buy" href="#">9900 руб.</a>
           </div>
         </div>
-        <!--Четвертая карточка шаблона:-->
         <div class="template-card">
           <img src="#" alt="Mishka">
-          <!--Если наводим курсор мыши на карточку шаблона,
-          то видим описание шаблона и кнопку с ценой:-->
           <div class="animation-block">
-            <h2 class="template-name">
-              <a href="#">Mishka</a>
-            </h2>
+            <a href="#" class="template-name">Mishka</a>
             <span class="template-brief">
-              Краткая информация о шаблоне
+              Интернет-магазин
+              вязаных игрушек
             </span>
             <a class="buy" href="#">9900 руб.</a>
           </div>
         </div>
-        <!--Пятая карточка шаблона:-->
         <div class="template-card">
           <img src="#" alt="Учебный сайт">
-          <!--Если наводим курсор мыши на карточку шаблона,
-          то видим описание шаблона и кнопку с ценой:-->
           <div class="animation-block">
-            <h2 class="template-name">
-              <a href="#">Учебный сайт</a>
-            </h2>
+            <a href="#" class="template-name">A Plus</a>
             <span class="template-brief">
-              Краткая информация о шаблоне
+              Лендинг курсов повышения
+              квалификации
             </span>
             <a class="buy" href="#">9900 руб.</a>
           </div>
         </div>
-        <!--Шестая карточка шаблона:-->
         <div class="template-card">
           <img src="#" alt="Кваст">
-          <!--Если наводим курсор мыши на карточку шаблона,
-          то видим описание шаблона и кнопку с ценой:-->
           <div class="animation-block">
-            <h2 class="template-name">
-              <a href="#">Кваст</a>
-            </h2>
+            <a href="#" class="template-name">Кваст</a>
             <span class="template-brief">
-              Краткая информация о шаблоне
+              Промо-сайт производителя
+              крафтового кваса
             </span>
             <a class="buy" href="#">9900 руб.</a>
           </div>
         </div>
-        <!--Блок пагинации:-->
         <div class="pagination">
-          <a>1</a>
+          <a class="current">1</a>
           <a href="#">2</a>
           <a href="#">3</a>
           <a href="#">Следующая</a>
@@ -231,7 +194,6 @@
       </div>
     </main>
     <footer class="main-footer">
-      <!--Блок местоположения и контактов перенес в footer:-->
       <div class="map">
         <div class="contacts">
           <span>
