@@ -13,3 +13,218 @@ h1 {
 h2 {
   font-size: 24px;
 }
+
+.main-header {
+  background-color: rgb(238, 238, 238);
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  width: 1160px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
+.main-header .container {
+  padding-top: 49px;
+}
+
+.logo {
+  float: left;
+  margin-right: 40px;
+}
+
+.main-navigation {
+  float: left;
+  height: 65px;
+}
+
+/* Подскажи как выровнить по вертикали пункты навигации и корзину?*/
+.main-navigation li {
+  display: inline;
+  list-style: none;
+}
+
+.basket-block {
+  float: right;
+  height: 65px;
+}
+
+.business-types {
+  margin-top: 80px;
+  margin-bottom: 82px;
+}
+
+.business-type {
+  float: left;
+  width: 300px;
+  margin-right: 100px;
+}
+
+.business-type:nth-child(3) {
+  margin-right: 60px;
+}
+
+.info .info-block {
+  float: left;
+  width: 700px;
+}
+
+.info .percent-blocks {
+  float: right;
+  width: 400px;
+}
+
+/*Не могу разобраться почему у блока '.partners' есть внутренние отступы слева
+ и справа, ведь нигде их не прописывал, возможно это особенность 'ul',*/
+.partners {
+  background-color: white;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+/*Не пойму почему не применяется 'vertical-align'? Может не туда навешиваю?*/
+.partners li {
+  float: left;
+  display: block;
+  width: 260px;
+  height: 180px;
+  margin-right: 40px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.partners li:nth-child(4) {
+  margin-right: 0;
+}
+
+.main-header-title {
+  float: left;
+  width: 100%;
+  text-align: center;
+  margin-top: 83px;
+  margin-bottom: 116px;
+}
+
+.filtration {
+  float: left;
+  margin-top: 60px;
+  width: 260px;
+  height: 775px;
+}
+
+.filtration li {
+  list-style: none;
+}
+
+/*Оставил временно параметр 'height', уберу после финальной стилизации:*/
+.filtration .price-filter {
+  margin-top: 56px;
+  margin-bottom: 60px;
+  width: 260px;
+  height: 132px;
+  background-color: rgb(238, 238, 238);
+}
+
+.filtration .grid-type-filter {
+  width: 260px;
+  height: 105px;
+  margin-bottom: 50px;
+}
+
+.filtration .features-filter {
+  width: 260px;
+  height: 183px;
+  margin-bottom: 48px;
+}
+
+.cards-block {
+  float: right;
+  margin-top: 60px;
+  width: 760px;
+}
+
+/*Оставил временно параметр 'height', уберу после финальной стилизации:*/
+.sort-by {
+  width: 760px;
+  height: 73px;
+}
+
+.sort-by .sort {
+  float: left;
+  display: block;
+}
+
+.sort-by .kind-of-sort {
+  float: right;
+}
+
+.template-card {
+  float: left;
+  width: 360px;
+  margin-right: 40px;
+  margin-bottom: 36px;
+  background-color: rgb(238, 238, 238);
+}
+
+/*Решил убрать правый маргин у каждого второго дочернего '.template-card',
+поэтому прописал соответствующий псевдокласс ':nth-child(2n)', не сработало
+корректно, сложилось ощущение, что отсчет дивов .template-card' начинается
+со второго. Не понял логики, за первый 'child' берется '.sort-by'?*/
+.template-card:nth-child(2n+1) {
+  margin-right: 0;
+}
+/*Расстояние между вторым и третим рядом '.template-card' по макету 39px,
+решил добавить такой костыль, имеет ли он шанс на существование?*/
+.template-card:nth-child(4),
+.template-card:nth-child(5) {
+  margin-bottom: 39px;
+}
+
+/*Оставил временно параметр 'height', уберу после финальной стилизации:*/
+.pagination {
+  float: left;
+  width: 443px;
+  height: 50px;
+  margin-top: 24px;
+}
+
+/*Не могу избавиться от повторяющегося фона карты,
+'background: no-repeat' не помогает - убирает фон начисто.
+Еще вопрос: фон обрезается по контейнеру, как это предотвратить?*/
+.main-footer .container {
+  margin-top: 60px;
+  background-image: url("../img/map.jpg");
+}
+
+/*Оставил временно параметр 'height', уберу после финальной стилизации:*/
+.contacts {
+  width: 319px;
+  height: 308px;
+  float: left;
+  margin-right: 840px;
+  margin-top: 54px;
+  background-color: rgb(255, 255, 255);
+}
+
+.footer-social {
+  width: 260px;
+  height: 79px;
+  float: left;
+  margin-top: 124px;
+  margin-right: 140px;
+  background-color: rgb(225, 225, 225);
+}
+
+.footer-info {
+  width: 560px;
+  height: 79px;
+  margin-top: 124px;
+  float: left;
+}

@@ -7,10 +7,12 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="container">
-        <a href="#">
-          <img src="img/nerds-logo.png" width="160" height="65" alt="Логотип">
-        </a>
+      <div class="container clearfix">
+        <div class="logo">
+          <a href="#">
+            <img src="img/nerds-logo.png" width="160" height="65" alt="Логотип">
+          </a>
+        </div>
         <nav class="main-navigation">
           <ul>
             <li>
@@ -30,51 +32,51 @@
         <div class="basket-block">
           <a href="#">Корзина</a>
         </div>
-      </div>
-    </header>
-    <main class="container">
-      <div class="slider">
-        <div class="slider-inner">
-          <div class="slider-slides">
-            <div class="slide">
-              <div class="slide-title">Долго, дорого, скрупулезно.</div>
-              <div class="slide-info">
-                Математически выверенный дизайн
-                для Вашего сайта или мобильного приложения.
+        <div class="slider">
+          <div class="slider-inner">
+            <div class="slider-slides">
+              <div class="slide">
+                <div class="slide-title">Долго, дорого, скрупулезно.</div>
+                <div class="slide-info">
+                  Математически выверенный дизайн
+                  для Вашего сайта или мобильного приложения.
+                </div>
+                <a href="#">Узнать больше</a>
+                <img src="img/slide-1.png" width="698" height="413" alt="Cлайд-1">
               </div>
-              <a href="#">Узнать больше</a>
-              <img src="img/slide-1.png" width="698" height="413" alt="Cлайд-1">
-            </div>
-            <div class="slide">
-              <div class="slide-title">Любим математику как никто другой</div>
-              <div class="slide-info">
-                Никакого креатива, только математические формулы
-                для расчета идеальных пропорций.
+              <div class="slide">
+                <div class="slide-title">Любим математику как никто другой</div>
+                <div class="slide-info">
+                  Никакого креатива, только математические формулы
+                  для расчета идеальных пропорций.
+                </div>
+                <a href="#">Узнать больше</a>
+                <img src="img/slide-2.png" width="663" height="430" alt="Cлайд-2">
               </div>
-              <a href="#">Узнать больше</a>
-              <img src="img/slide-2.png" width="663" height="430" alt="Cлайд-2">
-            </div>
-            <div class="slide">
-              <div class="slide-title">Только ночь, только хардкор</div>
-              <div class="slide-info">
-                Работаете днем, как все? Мы против этого.
-                Ближе к полуночи работа только начинается.
+              <div class="slide">
+                <div class="slide-title">Только ночь, только хардкор</div>
+                <div class="slide-info">
+                  Работаете днем, как все? Мы против этого.
+                  Ближе к полуночи работа только начинается.
+                </div>
+                <a href="#">Узнать больше</a>
+                <img src="img/slide-3.png" width="768" height="411" alt="Cлайд-3">
               </div>
-              <a href="#">Узнать больше</a>
-              <img src="img/slide-3.png" width="768" height="411" alt="Cлайд-3">
             </div>
-          </div>
-          <input type="radio" id="slide-1" name="toggle" checked>
-          <input type="radio" id="slide-2" name="toggle">
-          <input type="radio" id="slide-3" name="toggle">
-          <div class="slider-controls">
-            <label for="slide-1"></label>
-            <label for="slide-2"></label>
-            <label for="slide-3"></label>
+            <input type="radio" id="slide-1" name="toggle" checked>
+            <input type="radio" id="slide-2" name="toggle">
+            <input type="radio" id="slide-3" name="toggle">
+            <div class="slider-controls">
+              <label for="slide-1"></label>
+              <label for="slide-2"></label>
+              <label for="slide-3"></label>
+            </div>
           </div>
         </div>
       </div>
-      <div class="business-types">
+    </header>
+    <main class="container clearfix">
+      <div class="business-types clearfix">
         <div class="business-type">
           <img src="img/illustration-1.png" width="300" height="146" alt="Рисунок «Веб-сайты»">
           <h2 class="business-header" >Веб-сайты</h2>
@@ -103,7 +105,7 @@
           <a class="btn yellow" href="#">Заказать</a>
         </div>
       </div>
-      <div class="info">
+      <div class="info clearfix">
         <div class="info-block">
           <p>
               Мы маленькая, но гордая
@@ -137,7 +139,7 @@
           </div>
         </div>
       </div>
-      <ul class="partners">
+      <ul class="partners clearfix">
         <li><a><img src="img/logo-1.png" width="199" height="68" alt="Лого «htmlacademy.ru»"></a></li>
         <li><a><img src="img/logo-2.png" width="209" height="90" alt="Лого «Барбершоп Borodinski»"></a></li>
         <li><a><img src="img/logo-3.png" width="185" height="52" alt="Лого «Pink»"></a></li>
@@ -145,7 +147,7 @@
       </ul>
     </main>
     <footer class="main-footer">
-      <div class="map">
+      <div class="container clearfix">
         <div class="contacts">
           <span>
             NЁRDS DESIGN STUDIO
@@ -155,17 +157,16 @@
           тел. +7 (812) 275-75-75<br>
           <a href="#">Напишите нам</a>
         </div>
-        <img src="img/map.jpg" width="1440" height="416" alt="Местоположение на карте">
+        <section class="footer-social">
+          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+        </section>
+        <section class="footer-info">
+          <span>Давайте дружить, это выгодно!</span>
+          <span>Скидка 10% для друзей из социальных сетей.</span>
+        </section>
       </div>
-      <section class="footer-social">
-        <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-        <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-        <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-      </section>
-      <section class="footer-info">
-        <span>Давайте дружить, это выгодно!</span>
-        <span>Скидка 10% для друзей из социальных сетей.</span>
-      </section>
     </footer>
   </body>
 </html>

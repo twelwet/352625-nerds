@@ -7,10 +7,12 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="container">
-        <a href="#">
-          <img src="img/nerds-logo.png" width="160" height="65" alt="Логотип">
-        </a>
+      <div class="container clearfix">
+        <div class="logo">
+          <a href="#">
+            <img src="img/nerds-logo.png" width="160" height="65" alt="Логотип">
+          </a>
+        </div>
         <nav class="main-navigation">
           <ul>
             <li>
@@ -30,10 +32,10 @@
         <div class="basket-block">
           <a href="#">Корзина</a>
         </div>
-        <h1>Магазин готовых шаблонов</h1>
+        <h1 class="main-header-title">Магазин готовых шаблонов</h1>
       </div>
     </header>
-    <main class="container">
+    <main class="container clearfix">
       <div class="filtration">
         <form action="#" method="get">
           <span>Стоимость:</span>
@@ -104,17 +106,17 @@
           <button type="submit">Показать</button>
         </form>
       </div>
-      <div class="sort-by">
-        <span>Сортировать:</span>
-        <div class="kind-of-sort">
-          <a class="current" href="#">По цене</a>
-          <a href="#">По типу</a>
-          <a href="#">По названию</a>
-          <span class="sort-direction">По убыванию</span>
-          <span class="sort-direction">По возрастанию</span>
-        </div>
-      </div>
       <div class="cards-block">
+        <div class="sort-by">
+          <span class="sort">Сортировать:</span>
+          <div class="kind-of-sort">
+            <a class="current" href="#">По цене</a>
+            <a href="#">По типу</a>
+            <a href="#">По названию</a>
+            <span class="sort-direction">По убыванию</span>
+            <span class="sort-direction">По возрастанию</span>
+          </div>
+        </div>
         <div class="template-card">
           <img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona">
           <div class="animation-block">
@@ -190,7 +192,7 @@
       </div>
     </main>
     <footer class="main-footer">
-      <div class="map">
+      <div class="container clearfix">
         <div class="contacts">
           <span>
             NЁRDS DESIGN STUDIO
@@ -200,17 +202,16 @@
           тел. +7 (812) 275-75-75<br>
           <a href="#">Напишите нам</a>
         </div>
-        <img src="img/map.jpg" width="1440" height="416" alt="Местоположение на карте">
+        <section class="footer-social">
+          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+        </section>
+        <section class="footer-info">
+          <span>Давайте дружить, это выгодно!</span>
+          <span>Скидка 10% для друзей из социальных сетей.</span>
+        </section>
       </div>
-      <section class="footer-social">
-        <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-        <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-        <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-      </section>
-      <section class="footer-info">
-        <span>Давайте дружить, это выгодно!</span>
-        <span>Скидка 10% для друзей из социальных сетей.</span>
-      </section>
     </footer>
   </body>
 </html>
