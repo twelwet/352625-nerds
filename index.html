@@ -32,46 +32,43 @@
         <div class="basket-block">
           <a href="#">Корзина</a>
         </div>
-        <div class="slider">
-          <div class="slider-inner">
-            <div class="slider-slides">
-              <div class="slide">
-                <div class="slide-title">Долго, дорого, скрупулезно.</div>
-                <div class="slide-info">
-                  Математически выверенный дизайн
-                  для Вашего сайта или мобильного приложения.
-                </div>
-                <a href="#">Узнать больше</a>
-                <img src="img/slide-1.png" width="698" height="413" alt="Cлайд-1">
+      </div>
+      <div class="slider container">
+        <div class="slider-inner">
+          <div class="slider-slides">
+            <div class="slide slide-1">
+              <div class="slide-title">Долго, дорого, скрупулезно.</div>
+              <div class="slide-info">
+                Математически выверенный дизайн
+                для Вашего сайта или мобильного приложения.
               </div>
-              <div class="slide">
-                <div class="slide-title">Любим математику как никто другой</div>
-                <div class="slide-info">
-                  Никакого креатива, только математические формулы
-                  для расчета идеальных пропорций.
-                </div>
-                <a href="#">Узнать больше</a>
-                <img src="img/slide-2.png" width="663" height="430" alt="Cлайд-2">
-              </div>
-              <div class="slide">
-                <div class="slide-title">Только ночь, только хардкор</div>
-                <div class="slide-info">
-                  Работаете днем, как все? Мы против этого.
-                  Ближе к полуночи работа только начинается.
-                </div>
-                <a href="#">Узнать больше</a>
-                <img src="img/slide-3.png" width="768" height="411" alt="Cлайд-3">
-              </div>
+              <a href="#">Узнать больше</a>
             </div>
-            <input type="radio" id="slide-1" name="toggle" checked>
-            <input type="radio" id="slide-2" name="toggle">
-            <input type="radio" id="slide-3" name="toggle">
-            <div class="slider-controls">
-              <label for="slide-1"></label>
-              <label for="slide-2"></label>
-              <label for="slide-3"></label>
+            <div class="slide slide-2">
+              <div class="slide-title">Любим математику как никто другой</div>
+              <div class="slide-info">
+                Никакого креатива, только математические формулы
+                для расчета идеальных пропорций.
+              </div>
+              <a href="#">Узнать больше</a>
+            </div>
+            <div class="slide slide-3">
+              <div class="slide-title">Только ночь, только хардкор</div>
+              <div class="slide-info">
+                Работаете днем, как все? Мы против этого.
+                Ближе к полуночи работа только начинается.
+              </div>
+              <a href="#">Узнать больше</a>
             </div>
           </div>
+        </div>
+        <input type="radio" id="btn-1" name="toggle" checked>
+        <input type="radio" id="btn-2" name="toggle">
+        <input type="radio" id="btn-3" name="toggle">
+        <div class="slider-controls">
+          <label for="btn-1"></label>
+          <label for="btn-2"></label>
+          <label for="btn-3"></label>
         </div>
       </div>
     </header>
@@ -107,11 +104,11 @@
       </div>
       <div class="info clearfix">
         <div class="info-block">
-          <p>
+          <p class="info-block-title">
               Мы маленькая, но гордая
               дизайн-студия из Краснодара.
           </p>
-          <p>
+          <p class="info-block-text">
             Исповедуем принципы минимализма и чистоты. Ставим математический расчет
             превыше креатива. Работаем не покладая рук, как роботы.
           </p>
@@ -126,20 +123,20 @@
           <img src="img/nerds-illustration.jpg" width="360" height="208" alt="Логотип 2">
           <span>С 2004 года любим точность во всем:</span>
           <div class="percent-block">
-            <span class="percent">146%</span>
-            <span class="info">Уровень самоотдачи</span>
+            <div class="percent">146%</div>
+            <div class="info">Уровень самоотдачи</div>
           </div>
           <div class="percent-block">
-            <span class="percent">100%</span>
-            <span class="info">Cоблюдение сроков</span>
+            <div class="percent">100%</div>
+            <div class="info">Cоблюдение сроков</div>
           </div>
           <div class="percent-block">
-            <span class="percent">50%</span>
-            <span class="info">Минимальная предоплата</span>
+            <div class="percent">50%</div>
+            <div class="info">Минимальная предоплата</div>
           </div>
         </div>
       </div>
-      <ul class="partners clearfix">
+      <ul class="partners">
         <li><a><img src="img/logo-1.png" width="199" height="68" alt="Лого «htmlacademy.ru»"></a></li>
         <li><a><img src="img/logo-2.png" width="209" height="90" alt="Лого «Барбершоп Borodinski»"></a></li>
         <li><a><img src="img/logo-3.png" width="185" height="52" alt="Лого «Pink»"></a></li>
@@ -147,24 +144,30 @@
       </ul>
     </main>
     <footer class="main-footer">
-      <div class="container clearfix">
+      <div class="map clearfix">
         <div class="contacts">
           <span>
             NЁRDS DESIGN STUDIO
           </span>
-          191186, Санкт-Петербург,<br>
-          ул. Б. Конюшенная, д. 19/8<br>
-          тел. +7 (812) 275-75-75<br>
+          <div class="address">
+            191186, Санкт-Петербург,
+            ул. Б. Конюшенная, д. 19/8
+          </div>
+          <div class="telephone">
+            тел. +7 (812) 275-75-75<br>
+          </div>
           <a href="#">Напишите нам</a>
         </div>
+      </div>
+      <div class="container clearfix">
         <section class="footer-social">
           <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
           <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
           <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
         </section>
         <section class="footer-info">
-          <span>Давайте дружить, это выгодно!</span>
-          <span>Скидка 10% для друзей из социальных сетей.</span>
+          <span class="friendship">Давайте дружить, это выгодно!</span>
+          <span class="sale">Скидка 10% для друзей из социальных сетей.</span>
         </section>
       </div>
     </footer>

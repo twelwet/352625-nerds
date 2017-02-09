@@ -106,25 +106,25 @@
           <button type="submit">Показать</button>
         </form>
       </div>
-      <div class="cards-block">
-        <div class="sort-by">
-          <span class="sort">Сортировать:</span>
-          <div class="kind-of-sort">
-            <a class="current" href="#">По цене</a>
-            <a href="#">По типу</a>
-            <a href="#">По названию</a>
-            <span class="sort-direction">По убыванию</span>
-            <span class="sort-direction">По возрастанию</span>
-          </div>
+      <div class="sort-by">
+        <span class="sort">Сортировать:</span>
+        <div class="kind-of-sort">
+          <a class="current" href="#">По цене</a>
+          <a href="#">По типу</a>
+          <a href="#">По названию</a>
+          <div class="sort-direction">По убыванию</div>
+          <div class="sort-direction">По возрастанию</div>
         </div>
+      </div>
+      <div class="cards-block">
         <div class="template-card">
           <img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona">
           <div class="animation-block">
             <a href="#" class="template-name">Sedona</a>
-            <span class="template-brief">
-              Информационный сайт
+            <div class="template-brief">
+              Информационный сайт<br>
               для туристов
-            </span>
+            </div>
             <a class="buy" href="#">9900 руб.</a>
           </div>
         </div>
@@ -132,10 +132,10 @@
           <img src="img/img-pink.jpg" width="360" height="576" alt="Pink App">
           <div class="animation-block">
             <a href="#" class="template-name">Pink App</a>
-            <span class="template-brief">
-              Продуктовый лендинг
+            <div class="template-brief">
+              Продуктовый лендинг<br>
               Приложения для iOS и Android
-            </span>
+            </div>
             <a class="buy" href="#">9900 руб.</a>
           </div>
         </div>
@@ -143,10 +143,10 @@
           <img src="img/img-barbershop.jpg" width="360" height="576" alt="Barbershop">
           <div class="animation-block">
             <a href="#" class="template-name">Barbershop</a>
-            <span class="template-brief">
-              Сайт салона красоты.
+            <div class="template-brief">
+              Сайт салона красоты.<br>
               Для мужчин, да.
-            </span>
+            </div>
             <a class="buy" href="#">9900 руб.</a>
           </div>
         </div>
@@ -154,10 +154,10 @@
           <img src="img/img-mishka.jpg" width="360" height="576" alt="Mishka">
           <div class="animation-block">
             <a href="#" class="template-name">Mishka</a>
-            <span class="template-brief">
-              Интернет-магазин
+            <div class="template-brief">
+              Интернет-магазин<br>
               вязаных игрушек
-            </span>
+            </div>
             <a class="buy" href="#">9900 руб.</a>
           </div>
         </div>
@@ -165,10 +165,10 @@
           <img src="img/img-aplus.jpg" width="360" height="576" alt="A Plus">
           <div class="animation-block">
             <a href="#" class="template-name">A Plus</a>
-            <span class="template-brief">
-              Лендинг курсов повышения
+            <div class="template-brief">
+              Лендинг курсов повышения<br>
               квалификации
-            </span>
+            </div>
             <a class="buy" href="#">9900 руб.</a>
           </div>
         </div>
@@ -176,10 +176,10 @@
           <img src="img/img-kvast.jpg" width="360" height="576" alt="Кваст">
           <div class="animation-block">
             <a href="#" class="template-name">Кваст</a>
-            <span class="template-brief">
-              Промо-сайт производителя
+            <div class="template-brief">
+              Промо-сайт производителя<br>
               крафтового кваса
-            </span>
+            </div>
             <a class="buy" href="#">9900 руб.</a>
           </div>
         </div>
@@ -192,24 +192,30 @@
       </div>
     </main>
     <footer class="main-footer">
-      <div class="container clearfix">
+      <div class="map clearfix">
         <div class="contacts">
           <span>
             NЁRDS DESIGN STUDIO
           </span>
-          191186, Санкт-Петербург,<br>
-          ул. Б. Конюшенная, д. 19/8<br>
-          тел. +7 (812) 275-75-75<br>
+          <div class="address">
+            191186, Санкт-Петербург,
+            ул. Б. Конюшенная, д. 19/8
+          </div>
+          <div class="telephone">
+            тел. +7 (812) 275-75-75<br>
+          </div>
           <a href="#">Напишите нам</a>
         </div>
+      </div>
+      <div class="container clearfix">
         <section class="footer-social">
           <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
           <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
           <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
         </section>
         <section class="footer-info">
-          <span>Давайте дружить, это выгодно!</span>
-          <span>Скидка 10% для друзей из социальных сетей.</span>
+          <span class="friendship">Давайте дружить, это выгодно!</span>
+          <span class="sale">Скидка 10% для друзей из социальных сетей.</span>
         </section>
       </div>
     </footer>
