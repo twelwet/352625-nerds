@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Нёрдс - Главная страница</title>
-    <link href="css/style.css" rel="stylesheet" type=" text/css">
+    <link href="css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
   </head>
   <body>
     <header class="main-header">
@@ -30,38 +32,10 @@
           </ul>
         </nav>
         <div class="basket-block">
-          <a href="#">Корзина</a>
+          <a class="login" href="#">Корзина</a>
         </div>
       </div>
-      <div class="slider container">
-        <div class="slider-inner">
-          <div class="slider-slides">
-            <div class="slide slide-1">
-              <div class="slide-title">Долго, дорого, скрупулезно.</div>
-              <div class="slide-info">
-                Математически выверенный дизайн
-                для Вашего сайта или мобильного приложения.
-              </div>
-              <a href="#">Узнать больше</a>
-            </div>
-            <div class="slide slide-2">
-              <div class="slide-title">Любим математику как никто другой</div>
-              <div class="slide-info">
-                Никакого креатива, только математические формулы
-                для расчета идеальных пропорций.
-              </div>
-              <a href="#">Узнать больше</a>
-            </div>
-            <div class="slide slide-3">
-              <div class="slide-title">Только ночь, только хардкор</div>
-              <div class="slide-info">
-                Работаете днем, как все? Мы против этого.
-                Ближе к полуночи работа только начинается.
-              </div>
-              <a href="#">Узнать больше</a>
-            </div>
-          </div>
-        </div>
+      <div class="slider">
         <input type="radio" id="btn-1" name="toggle" checked>
         <input type="radio" id="btn-2" name="toggle">
         <input type="radio" id="btn-3" name="toggle">
@@ -69,6 +43,34 @@
           <label for="btn-1"></label>
           <label for="btn-2"></label>
           <label for="btn-3"></label>
+        </div>
+        <div class="slides">
+          <div class="slide">
+            <div class="slide-text">
+              <div class="slide-title">Долго, дорого, скрупулезно.</div>
+              <!--Без <br> обойтись не смог, ширина текста
+              от слайда к слайду разнится от 345px до 410px:-->
+              <p>Математически выверенный дизайн<br>
+              для вашего сайта или мобильного приложения.</p>
+              <a class="btn" href="#">Узнать больше</a>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-text">
+              <div class="slide-title">Любим математику как никто другой</div>
+              <p>Никакого креатива, только математические формулы<br>
+              для расчета идеальных пропорций.</p>
+              <a class="btn" href="#">Узнать больше</a>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-text">
+              <div class="slide-title">Только ночь, только хардкор</div>
+              <p>Работать днем, как все? Мы против этого.<br>
+              Ближе к полуночи работа только начинается.</p>
+              <a class="btn" href="#">Узнать больше</a>
+            </div>
+          </div>
         </div>
       </div>
     </header>
@@ -105,7 +107,7 @@
       <div class="info clearfix">
         <div class="info-block">
           <p class="info-block-title">
-              Мы маленькая, но гордая
+              Мы — маленькая, но гордая
               дизайн-студия из Краснодара.
           </p>
           <p class="info-block-text">
