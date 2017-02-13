@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Нёрдс - Каталог</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet" type="text/css">
   </head>
   <body>
@@ -32,24 +32,27 @@
           </ul>
         </nav>
         <div class="basket-block">
-          <a class="login" href="#">Корзина</a>
+          <a class="basket" href="#">Корзина</a>
         </div>
         <h1 class="main-header-title">Магазин готовых шаблонов</h1>
       </div>
     </header>
     <main class="container clearfix">
       <div class="filtration">
-        <form action="#" method="get">
+        <form action="form.php" method="get">
           <span>Стоимость:</span>
-          <div class="price-filter">
-            <div class="price-slider">
+          <div class="range-filter">
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="toggle toggle-min"></div>
+              <div class="toggle toggle-max"></div>
             </div>
-            <label>
-              От <input type="text" name="start-price">
-            </label>
-            <label>
-              До <input type="text" name="finish-price">
-            </label>
+            <div class="price-controls">
+              <label class="min-price">ОТ <input name="min-price" type="text" value="0"></label>
+              <label class="max-price">ДО <input name="max-price" type="text" value="15000"></label>
+            </div>
           </div>
           <span>Сетка:</span>
           <ul class="grid-type-filter">
@@ -105,21 +108,24 @@
               </label>
             </li>
           </ul>
-          <button type="submit">Показать</button>
+          <button class="btn" type="submit">Показать</button>
         </form>
       </div>
       <div class="sort-by">
         <span class="sort">Сортировать:</span>
         <div class="kind-of-sort">
           <a class="current" href="#">По цене</a>
-          <a href="#">По типу</a>
-          <a href="#">По названию</a>
-          <div class="sort-direction">По убыванию</div>
-          <div class="sort-direction">По возрастанию</div>
+          <a class="uncurrent" href="#">По типу</a>
+          <a class="uncurrent" href="#">По названию</a>
+          <div class="sort-direction down">По убыванию</div>
+          <div class="sort-direction up">По возрастанию</div>
         </div>
       </div>
       <div class="cards-block">
         <div class="template-card">
+          <div class="circle circle-1"></div>
+          <div class="circle circle-2"></div>
+          <div class="circle circle-3"></div>
           <img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona">
           <div class="animation-block">
             <a href="#" class="template-name">Sedona</a>
@@ -127,10 +133,13 @@
               Информационный сайт
               для туристов
             </div>
-            <a class="buy" href="#">9900 руб.</a>
+            <a class="btn" href="#">9900 руб.</a>
           </div>
         </div>
         <div class="template-card">
+          <div class="circle circle-1"></div>
+          <div class="circle circle-2"></div>
+          <div class="circle circle-3"></div>
           <img src="img/img-pink.jpg" width="360" height="576" alt="Pink App">
           <div class="animation-block">
             <a href="#" class="template-name">Pink App</a>
@@ -138,10 +147,13 @@
               Продуктовый лендинг
               Приложения для iOS и Android
             </div>
-            <a class="buy" href="#">9900 руб.</a>
+            <a class="btn" href="#">9900 руб.</a>
           </div>
         </div>
         <div class="template-card">
+          <div class="circle circle-1"></div>
+          <div class="circle circle-2"></div>
+          <div class="circle circle-3"></div>
           <img src="img/img-barbershop.jpg" width="360" height="576" alt="Barbershop">
           <div class="animation-block">
             <a href="#" class="template-name">Barbershop</a>
@@ -149,10 +161,13 @@
               Сайт салона красоты.
               Для мужчин, да.
             </div>
-            <a class="buy" href="#">9900 руб.</a>
+            <a class="btn" href="#">9900 руб.</a>
           </div>
         </div>
         <div class="template-card">
+          <div class="circle circle-1"></div>
+          <div class="circle circle-2"></div>
+          <div class="circle circle-3"></div>
           <img src="img/img-mishka.jpg" width="360" height="576" alt="Mishka">
           <div class="animation-block">
             <a href="#" class="template-name">Mishka</a>
@@ -160,10 +175,13 @@
               Интернет-магазин
               вязаных игрушек
             </div>
-            <a class="buy" href="#">9900 руб.</a>
+            <a class="btn" href="#">9900 руб.</a>
           </div>
         </div>
         <div class="template-card">
+          <div class="circle circle-1"></div>
+          <div class="circle circle-2"></div>
+          <div class="circle circle-3"></div>
           <img src="img/img-aplus.jpg" width="360" height="576" alt="A Plus">
           <div class="animation-block">
             <a href="#" class="template-name">A Plus</a>
@@ -171,10 +189,13 @@
               Лендинг курсов повышения
               квалификации
             </div>
-            <a class="buy" href="#">9900 руб.</a>
+            <a class="btn" href="#">9900 руб.</a>
           </div>
         </div>
         <div class="template-card">
+          <div class="circle circle-1"></div>
+          <div class="circle circle-2"></div>
+          <div class="circle circle-3"></div>
           <img src="img/img-kvast.jpg" width="360" height="576" alt="Кваст">
           <div class="animation-block">
             <a href="#" class="template-name">Кваст</a>
@@ -182,14 +203,14 @@
               Промо-сайт производителя
               крафтового кваса
             </div>
-            <a class="buy" href="#">9900 руб.</a>
+            <a class="btn" href="#">9900 руб.</a>
           </div>
         </div>
         <div class="pagination">
-          <a class="current">1</a>
-          <a href="#">2</a>
-          <a href="#">3</a>
-          <a href="#">Следующая</a>
+          <a class="btn page current">1</a>
+          <a class="btn page uncurrent" href="#">2</a>
+          <a class="btn page uncurrent" href="#">3</a>
+          <a class="btn next uncurrent" href="#">Следующая</a>
         </div>
       </div>
     </main>
@@ -206,7 +227,7 @@
           <div class="telephone">
             тел. +7 (812) 275-75-75<br>
           </div>
-          <a href="#">Напишите нам</a>
+          <a class="btn" href="#">Напишите нам</a>
         </div>
       </div>
       <div class="container clearfix">
