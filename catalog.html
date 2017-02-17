@@ -11,7 +11,7 @@
     <header class="main-header">
       <div class="container clearfix">
         <div class="logo">
-          <a href="#">
+          <a href="index.html">
             <img src="img/nerds-logo.png" width="160" height="65" alt="Логотип">
           </a>
         </div>
@@ -51,26 +51,29 @@
             </div>
             <div class="price-controls">
               <label class="min-price">ОТ <input name="min-price" type="text" value="0"></label>
-              <label class="max-price">ДО <input name="max-price" type="text" value="15000"></label>
+              <label class="max-price">ДО <input name="max-price" type="text" value="15 000"></label>
             </div>
           </div>
           <span>Сетка:</span>
           <ul class="grid-type-filter">
             <li>
-              <label>
-                <input type="radio" name="grid-type" value="adaptive-grid">
+              <label class="grid-type-radio">
+                <input type="radio" name="grid-type" value="adaptive-grid" checked>
+                <span class="radio-indicator"></span>
                 Адаптивная
               </label>
             </li>
             <li>
-              <label>
+              <label class="grid-type-radio">
                 <input type="radio" name="grid-type" value="fixed-grid">
+                <span class="radio-indicator"></span>
                 Фиксированная
               </label>
             </li>
             <li>
-              <label>
+              <label class="grid-type-radio">
                 <input type="radio" name="grid-type" value="rubber-grid">
+                <span class="radio-indicator"></span>
                 Резиновая
               </label>
             </li>
@@ -78,32 +81,37 @@
           <span>Особенности:</span>
           <ul class="features-filter">
             <li>
-              <label>
-                <input type="checkbox" value="slider">
+              <label class="features-checkbox">
+                <input type="checkbox" value="slider" checked>
+                <span class="checkbox-indicator"></span>
                 Слайдер
               </label>
             </li>
             <li>
-              <label>
+              <label class="features-checkbox">
                 <input type="checkbox" value="benefits-block">
+                <span class="checkbox-indicator"></span>
                 Блок преимуществ
               </label>
             </li>
             <li>
-              <label>
-                <input type="checkbox" value="news">
+              <label class="features-checkbox">
+                <input type="checkbox" value="news" checked>
+                <span class="checkbox-indicator"></span>
                 Новости
               </label>
             </li>
             <li>
-              <label>
+              <label class="features-checkbox">
                 <input type="checkbox" value="gallery">
+                <span class="checkbox-indicator"></span>
                 Галерея
               </label>
             </li>
             <li>
-              <label>
+              <label class="features-checkbox">
                 <input type="checkbox" value="basket">
+                <span class="checkbox-indicator"></span>
                 Корзина
               </label>
             </li>
@@ -123,9 +131,7 @@
       </div>
       <div class="cards-block">
         <div class="template-card">
-          <div class="circle circle-1"></div>
-          <div class="circle circle-2"></div>
-          <div class="circle circle-3"></div>
+          <div class="circle"></div>
           <img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona">
           <div class="animation-block">
             <a href="#" class="template-name">Sedona</a>
@@ -137,9 +143,7 @@
           </div>
         </div>
         <div class="template-card">
-          <div class="circle circle-1"></div>
-          <div class="circle circle-2"></div>
-          <div class="circle circle-3"></div>
+          <div class="circle"></div>
           <img src="img/img-pink.jpg" width="360" height="576" alt="Pink App">
           <div class="animation-block">
             <a href="#" class="template-name">Pink App</a>
@@ -151,9 +155,7 @@
           </div>
         </div>
         <div class="template-card">
-          <div class="circle circle-1"></div>
-          <div class="circle circle-2"></div>
-          <div class="circle circle-3"></div>
+          <div class="circle"></div>
           <img src="img/img-barbershop.jpg" width="360" height="576" alt="Barbershop">
           <div class="animation-block">
             <a href="#" class="template-name">Barbershop</a>
@@ -165,9 +167,7 @@
           </div>
         </div>
         <div class="template-card">
-          <div class="circle circle-1"></div>
-          <div class="circle circle-2"></div>
-          <div class="circle circle-3"></div>
+          <div class="circle"></div>
           <img src="img/img-mishka.jpg" width="360" height="576" alt="Mishka">
           <div class="animation-block">
             <a href="#" class="template-name">Mishka</a>
@@ -179,9 +179,7 @@
           </div>
         </div>
         <div class="template-card">
-          <div class="circle circle-1"></div>
-          <div class="circle circle-2"></div>
-          <div class="circle circle-3"></div>
+          <div class="circle"></div>
           <img src="img/img-aplus.jpg" width="360" height="576" alt="A Plus">
           <div class="animation-block">
             <a href="#" class="template-name">A Plus</a>
@@ -193,9 +191,7 @@
           </div>
         </div>
         <div class="template-card">
-          <div class="circle circle-1"></div>
-          <div class="circle circle-2"></div>
-          <div class="circle circle-3"></div>
+          <div class="circle circle"></div>
           <img src="img/img-kvast.jpg" width="360" height="576" alt="Кваст">
           <div class="animation-block">
             <a href="#" class="template-name">Кваст</a>
@@ -225,7 +221,7 @@
             ул. Б. Конюшенная, д. 19/8
           </div>
           <div class="telephone">
-            тел. +7 (812) 275-75-75<br>
+            тел. +7 (812) 275-75-75
           </div>
           <a class="btn" href="#">Напишите нам</a>
         </div>
@@ -242,5 +238,27 @@
         </section>
       </div>
     </footer>
-  </body>
+    <div class="modal-content">
+      <button class="modal-content-close" type="button" title="Закрыть">
+        Закрыть
+      </button>
+        <form class="write-us" action="write-us.php" method="post">
+          <h2 class="title">Напишите нам</h2>
+          <label class="name">
+            <div>Ваше имя:</div>
+            <input name="name" type="text" value="" placeholder="Представьтесь, пожалуйста">
+          </label>
+          <label class="email">
+            <div>Ваш e-mail:</div>
+            <input name="email" type="text" value="" placeholder="Для отправки ответа">
+          </label>
+          <label class="message">
+            <div>Текст письма:</div>
+            <input name="message" type="text" value="" placeholder="В свободной форме">
+          </label>
+          <button class="btn" type="submit">Отправить</button>
+      </form>
+    </div>
+    <div class="modal-overlay"></div>
+    </body>
 </html>
