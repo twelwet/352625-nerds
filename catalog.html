@@ -57,63 +57,39 @@
           <span>Сетка:</span>
           <ul class="grid-type-filter">
             <li>
-              <label class="grid-type-radio">
-                <input type="radio" name="grid-type" value="adaptive-grid" checked>
-                <span class="radio-indicator"></span>
-                Адаптивная
-              </label>
+              <input type="radio" name="grid-type" id="adaptive" value="adaptive-grid" checked>
+              <label for="adaptive">Адаптивная</label>
             </li>
             <li>
-              <label class="grid-type-radio">
-                <input type="radio" name="grid-type" value="fixed-grid">
-                <span class="radio-indicator"></span>
-                Фиксированная
-              </label>
+              <input type="radio" name="grid-type" id="fixed" value="fixed-grid">
+              <label for="fixed">Фиксированная</label>
             </li>
             <li>
-              <label class="grid-type-radio">
-                <input type="radio" name="grid-type" value="rubber-grid">
-                <span class="radio-indicator"></span>
-                Резиновая
-              </label>
+              <input type="radio" name="grid-type" id="rubber" value="rubber-grid">
+              <label for="rubber">Резиновая</label>
             </li>
           </ul>
           <span>Особенности:</span>
           <ul class="features-filter">
             <li>
-              <label class="features-checkbox">
-                <input type="checkbox" value="slider" checked>
-                <span class="checkbox-indicator"></span>
-                Слайдер
-              </label>
+              <input type="checkbox" id="slider" value="slider" checked>
+              <label for="slider">Слайдер</label>
             </li>
             <li>
-              <label class="features-checkbox">
-                <input type="checkbox" value="benefits-block">
-                <span class="checkbox-indicator"></span>
-                Блок преимуществ
-              </label>
+              <input type="checkbox" id="benefits" value="benefits-block">
+              <label for="benefits">Блок преимуществ</label>
             </li>
             <li>
-              <label class="features-checkbox">
-                <input type="checkbox" value="news" checked>
-                <span class="checkbox-indicator"></span>
-                Новости
-              </label>
+              <input type="checkbox" id="news" value="news" checked>
+              <label for="news">Новости</label>
             </li>
             <li>
-              <label class="features-checkbox">
-                <input type="checkbox" value="gallery">
-                <span class="checkbox-indicator"></span>
-                Галерея
-              </label>
+              <input type="checkbox" id="gallery" value="gallery">
+              <label for="gallery">Галерея</label>
             </li>
             <li>
-              <label class="features-checkbox">
-                <input type="checkbox" value="basket">
-                <span class="checkbox-indicator"></span>
-                Корзина
-              </label>
+              <input type="checkbox" id="basket" value="basket">
+              <label for="basket">Корзина</label>
             </li>
           </ul>
           <button class="btn" type="submit">Показать</button>
@@ -123,8 +99,8 @@
         <span class="sort">Сортировать:</span>
         <div class="kind-of-sort">
           <a class="current" href="#">По цене</a>
-          <a class="uncurrent" href="#">По типу</a>
-          <a class="uncurrent" href="#">По названию</a>
+          <a href="#">По типу</a>
+          <a href="#">По названию</a>
           <div class="sort-direction down">По убыванию</div>
           <div class="sort-direction up">По возрастанию</div>
         </div>
@@ -204,14 +180,15 @@
         </div>
         <div class="pagination">
           <a class="btn page current">1</a>
-          <a class="btn page uncurrent" href="#">2</a>
-          <a class="btn page uncurrent" href="#">3</a>
-          <a class="btn next uncurrent" href="#">Следующая</a>
+          <a class="btn page" href="#">2</a>
+          <a class="btn page" href="#">3</a>
+          <a class="btn next" href="#">Следующая</a>
         </div>
       </div>
     </main>
     <footer class="main-footer">
       <div class="map clearfix">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424177826!2d30.3208892519856!3d59.93879686895865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1487445450346" width="100%" height="416" frameborder="0" allowfullscreen></iframe>
         <div class="contacts">
           <span>
             NЁRDS DESIGN STUDIO
