@@ -973,11 +973,15 @@ display: none;
   border: 0;
 }
 
+.map .container {
+  position: relative;
+}
+
 .map .contacts {
   position: absolute;
   width: 269px;
-  top: 53px;
-  left: 320px;
+  bottom: 127px;
+  left: 20px;
   padding-left: 50px;
   background-color: rgb(255, 255, 255);
 }
