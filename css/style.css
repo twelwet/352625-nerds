@@ -6,6 +6,7 @@ body {
   font-weight: 500;
   font-style: normal;
   line-height: normal;
+  min-width: 1200px;
 }
 
 h1 {
@@ -976,7 +977,7 @@ display: none;
   position: absolute;
   width: 269px;
   top: 53px;
-  left: 243px;
+  left: 320px;
   padding-left: 50px;
   background-color: rgb(255, 255, 255);
 }
