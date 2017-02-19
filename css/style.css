@@ -49,8 +49,8 @@ h2 {
   opacity: 0.3;
 }
 
-.uncurrent-logo:hover,
-.uncurrent-logo:active {
+.index-logo:hover,
+.index-logo:active {
   opacity: 1;
 }
 
@@ -103,12 +103,14 @@ h2 {
   position: relative;
 }
 
-.underline {
-  position: absolute;
-  width: 74px;
+.main-navigation .current::after {
+  content: "";
   height: 2px;
   background-color: rgb(251, 86, 90);
   bottom: 15px;
+  left: 24px;
+  right: 24px;
+  position: absolute;
 }
 
 .basket-block {
@@ -467,52 +469,42 @@ h2 {
   padding: 0;
   margin: 0;
   margin-bottom: 80px;
+  font-size: 0;
 }
 
 .partners li {
-  position: relative;
-  float: left;
+position: relative;
+display: inline-block;
+width: 260px;
+margin-right: 40px;
+vertical-align: middle;
+text-align: center;
 }
-
-.partners li:nth-child(1) {
-  width: 251px;
-  padding-left: 31px;
-  padding-top: 62px;
-  padding-bottom: 46px;
+.partners li:nth-child(4n) {
+margin-right: 0;
 }
-
-.partners li:nth-child(1)::after,
-.partners li:nth-child(2)::after,
-.partners li:nth-child(3)::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 2px;
-  height: 52px;
-  background-color: rgb(238, 238, 238);
-  right: 1px;
-  top: 64px;
+.partners li::after {
+content: "";
+position: absolute;
+display: block;
+width: 2px;
+height: 52px;
+background-color: rgb(238, 238, 238);
+right: -20px;
+top: 50%;
+margin-top: -26px;
 }
-
-.partners li:nth-child(2) {
-  width: 256px;
-  padding-left: 44px;
-  padding-top: 46px;
-}
-
-.partners li:nth-child(3) {
-  width: 244px;
-  padding-left: 56px;
-  padding-top: 65px;
-}
-
-.partners li:nth-child(4) {
-  padding-left: 62px;
-  padding-top: 52px;
+.partners li:nth-child(4n)::after {
+display: none;
 }
 
 .partners a {
   opacity: 0.2;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  padding-left: 0px;
+
+  display: block;
 }
 
 .partners a:hover {
@@ -966,7 +958,7 @@ h2 {
 .main-footer .map {
   position: relative;
   width: 100%;
-  min-height: 416px;
+  height: 416px;
   margin-left: auto;
   margin-right: auto;
   background: url("../img/map.jpg");
