@@ -974,6 +974,12 @@ h2 {
   background-position: center;
 }
 
+.map iframe {
+  width: 100%;
+  min-height: 416px;
+  border: 0;
+}
+
 .map .contacts {
   position: absolute;
   width: 269px;
@@ -1152,6 +1158,10 @@ h2 {
   transform: rotate(-45deg);
 }
 
+.write-us span {
+  display: block;
+}
+
 .modal-content h2 {
   font-size: 45px;
   line-height: 45px;
@@ -1165,6 +1175,7 @@ h2 {
 
 .modal-content .name {
   float: left;
+
 }
 
 .modal-content .email {
